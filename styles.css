@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    padding: 8px 8px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 8px;
+}
+nav ul :hover {
+    background: #363636;
+    text-decoration: none;
+    padding: 8px 8px;
+    border-radius: 4px;
+
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projeto-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.projeto-card:hover {
+    transform: scale(1.05);
+}
+.projeto-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.projeto-card h3 {
+    margin: 10px 0;
+}
+.projeto-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+.tags {
+    font-size: 0.8em;
+    color: #777;
+    margin: 5px 0;
+}
+.projeto-card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.projeto-card a:hover {
+    background: #555;
+}
+.projeto-card a::after {
+    content: '\2192';
+    margin-left: 10px;
+}
+
+#sobre {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+#sobre h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+#sobre a {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#sobre a:hover {
+    background: #555;
+}
+#contato {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+}
+#contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#contato p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#contato ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#contato ul li {
+    display: inline;
+}
+#contato ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#contato ul li a:hover {
+    color: #ccc;
+}
+#contato ul li a i {
+    font-size: 1.5em;
+}
+
+#artigos {
+    background: #f9f9f9;
+    padding: 50px 20px;
+}
+#artigos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.artigos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.artigo-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: auto;
+}
+.artigo-card:hover {
+    transform: scale(1.05);
+}
+.artigo-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.artigo-card h3 {
+    margin:auto;
+}
+.artigo-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+.artigo-card a {
+    display: flex;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+.artigo-card a:hover {
+    background: #555;
+}
