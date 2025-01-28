@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <section id="sobre">
+        <h1>Olá, sou Talissonn</h1>
+        <p>Product Designer há um tempinho. Sou formado em Design e também fiz uma pós em
+            Design Thinking e Novos Negócios. No momento, “tô” curtindo a vida em São Bento do Sul, SC.</p>
+        <a href="curriculo.pdf" download>Baixar Currículo</a>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto.</p>
+                <div class="tags">#UX #UI #Design</div>
+                <a href="projeto1.html">Ver mais</a>
+            </div>
+            <div class="projeto-card">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto.</p>
+                <div class="tags">#Desenvolvimento #Frontend</div>
+                <a href="projeto2.html">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="artigos">
+        <h2>Meus Artigos</h2>
+        <div class="artigos-container">
+            <div class="artigo-card">
+                <img src="Img\Art1.png" alt="Artigo 1">
+                <h3>Como priorizar backlog através do processo de design?</h3>
+                <p>Com uma boa pesquisa, conseguimos direcionar o backlog para o caminho certo.</p>
+                <a href="https://brasil.uxdesign.cc/como-fazer-uma-prioriza%C3%A7%C3%A3o-de-backlog-atrav%C3%A9s-do-processo-de-design-a84d5fe2d15a" target="_blank">Ler mais</a>
+            </div>
+            <div class="artigo-card">
+                <img src="Img\Art2.png" alt="Artigo 2">
+                <h3>Imersão como estudante</h3>
+                <p> Se você pudesse ser o seu cliente? Testar como todo o serviço da sua empresa funciona, mas sem ninguem saber que você trabalha lá.</p>
+                <a href="https://medium.com/animadigital/imers%C3%A3o-como-aluno-df5fbc0a2cd4" target="_blank">Ler mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Que tal uma conversa?</h2>
+        <p>Me siga nos seguintes canais:</p>
+        <ul>
+            <li><a href="https://instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://twitter.com/seuusuario" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+    </section>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
